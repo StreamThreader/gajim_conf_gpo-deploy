@@ -13,6 +13,6 @@ For Windows 2008 R2, install Python 3.8.10 (path c:\Program Files\Python38\)
 Place script "gajim-settings-gen_autologon.py" to Gajim dir "c:\Program Files\Gajim\"
 
 1) Win+R -> gpedit.msc (or use Domain Group Policy Editor)
-2) Group Policy Management Editor window, navigate to Computer Configuration > Policies > Windows Settings > Scripts -> Startup
+2) Group Policy Management Editor window, navigate to User Configuration > Policies > Windows Settings > Scripts (Logon/Logoff)
 3) Script Name: "c:\Program Files\Python38\python.exe"
 4) Script Parameters: "c:\Program Files\Gajim\gajim-settings-gen_autologon.py"
