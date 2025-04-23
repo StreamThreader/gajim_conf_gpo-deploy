@@ -2,7 +2,7 @@
 
 Scripts for generate Gajim 1.3.3 user profile settings.
 
-1) gajim-loop-gen.py - read txt file "user_password_list.txt" with user_name:password line by line, then run "gajim-settings-generator.py user password" for generate Settings.sqlite (move to subfolder "gajim-configs\\"+user_name+"\\AppData\\Roaming\\Gajim")
+1) gajim-loop-gen.py - for mass generate, read txt file "user_password_list.txt" with user_name:password line by line, then run "gajim-settings-generator.py user password" for generate Settings.sqlite (move to subfolder "gajim-configs\\"+user_name+"\\AppData\\Roaming\\Gajim")
 
 2) gajim-settings-generator.py - generate Settings.sqlite for single user (supply username and password as arguments)
 
