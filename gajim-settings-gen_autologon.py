@@ -3,7 +3,7 @@ import sys
 import subprocess
 import sqlite3
 
-# Version 1.0
+# Version 1.1
 # for Gajim 1.3.3
 
 host_name = "jabber.example.org"
@@ -20,6 +20,9 @@ def check_if_need_run():
         proc = subprocess.Popen([gajim_exe], shell=True,
              stdin=None, stdout=None, stderr=None, close_fds=True)
         exit(0)
+
+if not os.path.exists(app_data+"\Gajim"):
+   os.makedirs(app_data+"\Gajim")
 
 # if Settings file exist
 # skip, and just run Gajim
