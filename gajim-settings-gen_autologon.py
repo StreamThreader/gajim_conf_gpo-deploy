@@ -3,14 +3,14 @@ import sys
 import subprocess
 import sqlite3
 
-# Version 1.1
+# Version 1.2
 # for Gajim 1.3.3
 
 host_name = "jabber.example.org"
 resource_name = "onTerminalServer"
 user_name = os.environ['USERNAME']
 app_data = os.environ['APPDATA']
-conf_file = app_data+"\Gajim\Settings.sqlite"
+conf_file = app_data+"\\Gajim\\Settings.sqlite"
 gajim_exe = "C:\\Program Files\\Gajim\\bin\\Gajim.exe"
 user_password = ""
 
