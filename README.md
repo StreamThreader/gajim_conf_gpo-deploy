@@ -12,10 +12,12 @@ Requirements:
 1) Python 3.8.10 (https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe)
 2) Nircmd 2.87 (https://www.nirsoft.net/utils/nircmd-x64.zip)
 
-You can use Microsoft Group Policy to organise autostart:
-For Windows 2008 R2, install Python 3.8.10 (path c:\Program Files\Python38\)
-Place script "gajim-settings-gen_autologon.py" to Gajim dir "c:\Program Files\Gajim\"
+For Windows 2008 R2:
+1) install Python 3.8.10 (path c:\Program Files\Python38\
+2) copy nircmd to "C:\Program Files\nircmd\"
+3) place script "gajim-settings-gen_autologon.py" to Gajim dir "c:\Program Files\Gajim\"
 
+You can use Microsoft Group Policy to organise autostart
 1) Win+R -> gpedit.msc (or use Domain Group Policy Editor)
 2) Group Policy Management Editor window, navigate to User Configuration > Policies > Windows Settings > Scripts (Logon/Logoff)
 3) Script Name: "c:\Program Files\Python38\python.exe"
