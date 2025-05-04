@@ -8,6 +8,10 @@ Scripts for generate Gajim 1.3.3 user profile settings.
 
 3) gajim-settings-gen_autologon.py - used for run Gajim with user logon (or auto-create config, and then run Gajim)
 
+Requirements:
+1) Python 3.8.10 (https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe)
+2) Nircmd 2.87 (https://www.nirsoft.net/utils/nircmd-x64.zip)
+
 You can use Microsoft Group Policy to organise autostart:
 For Windows 2008 R2, install Python 3.8.10 (path c:\Program Files\Python38\)
 Place script "gajim-settings-gen_autologon.py" to Gajim dir "c:\Program Files\Gajim\"
