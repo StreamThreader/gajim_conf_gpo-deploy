@@ -4,16 +4,16 @@ import subprocess
 import sqlite3
 import time
 
-# Version 1.2
+# Version 1.3
 # for Gajim 1.3.3
 
 host_name = "jabber.example.org"
 resource_name = "onTerminalServer"
 user_name = os.environ['USERNAME']
 app_data = os.environ['APPDATA']
-conf_file = app_data+"\\Gajim\\Settings.sqlite"
-gajim_exe = "C:\\Program Files\\Gajim\\bin\\Gajim.exe"
-nircmd = r"c:\Program Files\nircmd\nircmd.exe"
+conf_file = app_data+r"\Gajim\Settings.sqlite"
+gajim_exe = r"C:\Program Files\Gajim\bin\Gajim.exe"
+nircmd = r"C:\Program Files\nircmd\nircmd.exe"
 user_password = ""
 
 
