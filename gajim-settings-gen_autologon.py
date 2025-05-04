@@ -2,6 +2,7 @@ import os
 import sys
 import subprocess
 import sqlite3
+import time
 
 # Version 1.2
 # for Gajim 1.3.3
@@ -17,6 +18,7 @@ user_password = ""
 
 def check_if_need_run():
     if os.path.isfile(conf_file):
+        time.sleep(5)
         proc = subprocess.Popen([gajim_exe], shell=True,
              stdin=None, stdout=None, stderr=None, close_fds=True)
         exit(0)
