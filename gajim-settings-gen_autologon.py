@@ -13,6 +13,7 @@ user_name = os.environ['USERNAME']
 app_data = os.environ['APPDATA']
 conf_file = app_data+"\\Gajim\\Settings.sqlite"
 gajim_exe = "C:\\Program Files\\Gajim\\bin\\Gajim.exe"
+nircmd = r"c:\Program Files\nircmd\nircmd.exe"
 user_password = ""
 
 
@@ -21,6 +22,12 @@ def check_if_need_run():
         time.sleep(5)
         proc = subprocess.Popen([gajim_exe], shell=True,
              stdin=None, stdout=None, stderr=None, close_fds=True)
+
+        time.sleep(3)
+        # minimize Gajim window
+        proc = subprocess.Popen([nircmd, "win", "min", "process", "Gajim.exe"],
+             shell=True, stdin=None, stdout=None, stderr=None, close_fds=True)
+
         exit(0)
 
 if not os.path.exists(app_data+"\Gajim"):
