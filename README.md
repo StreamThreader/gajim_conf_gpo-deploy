@@ -13,7 +13,7 @@ Requirements:
 2) Nircmd 2.87 (https://www.nirsoft.net/utils/nircmd-x64.zip)
 
 For Windows 2008 R2:
-1) install Python 3.8.10 (path c:\Program Files\Python38\
+1) install Python 3.8.10 to "c:\Program Files\Python38\"
 2) copy nircmd to "C:\Program Files\nircmd\"
 3) place script "gajim-settings-gen_autologon.py" to Gajim dir "c:\Program Files\Gajim\"
 
